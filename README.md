@@ -1,2 +1,3 @@
-# pms
-The Bhojpur PMS is a software-as-a-service product used as a Property Management Engine based on Bhojpur.NET Platform for application delivery.
+# Bhojpur PMS - Property Management System
+
+The `Bhojpur PMS` is a comprehensive property management system applied within the [Bhojpur.NET Platform](https://github.com/bhojpur/platform/) ecosystem for delivery of distributed `applications` or `services`.
