@@ -1,0 +1,38 @@
+{
+    "name": "bhojpur-pms-email",
+    "version": "1.0.0",
+    "description": "A generator and sender of Emails on behalf of Bhojpur PMS application",
+    "homepage": "https://www.bhojpur-consulting.com",
+    "author": "Bhojpur Consulting Private Limited, India",
+    "license": "MIT",
+    "main": "./src/index.js",
+    "private": true,
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node ./src/index.js",
+      "dev": "nodemon -w ../common -w src --inspect=0.0.0.0:9228 ./src/index.js",
+      "lint": "eslint .",
+      "format": "prettier --write '**/*.{js,jsx,ts,tsx,json,css}'"
+    },
+    "keywords": [
+      "email",
+      "mailgun"
+    ],
+    "dependencies": {
+      "@bhojpur/common": "*",
+      "body-parser": "1.19.0",
+      "ejs": "3.1.8",
+      "express": "4.17.1",
+      "express-winston": "2.6.0",
+      "form-data": "4.0.0",
+      "jsonwebtoken": "8.5.1",
+      "locale": "0.1.0",
+      "mailgun.js": "4.2.1",
+      "moment": "2.29.3",
+      "mongodb": "3.5.6",
+      "winston": "2.4.4"
+    },
+    "devDependencies": {
+      "nodemon": "2.0.3"
+    }
+  }

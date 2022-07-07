@@ -1,0 +1,45 @@
+{
+    "name": "bhojpur-pms-pdfgen",
+    "version": "1.0.0",
+    "description": "A generator or PDF documents (letters, contracts, invoices) for Bhojpur PMS application",
+    "homepage": "https://www.bhojpur-consulting.com",
+    "author": "Bhojpur Consulting Private Limited, India",
+    "license": "MIT",
+    "main": "index.js",
+    "private": true,
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node index.js",
+      "dev": "nodemon -w ../common -w src -w data -w templates -e js,ejs,css,png --inspect=0.0.0.0:9227 src/index.js",
+      "lint": "eslint .",
+      "format": "prettier --write '**/*.{js,jsx,ts,tsx,json,css}'"
+    },
+    "keywords": [
+      "property-management",
+      "real-estate",
+      "document",
+      "pdf"
+    ],
+    "dependencies": {
+      "@bhojpur/common": "*",
+      "aws-sdk": "2.1116.0",
+      "ejs": "3.1.8",
+      "express": "4.17.3",
+      "express-winston": "2.6.0",
+      "file-url": "3.0.0",
+      "fs-extra": "10.1.0",
+      "handlebars": "4.7.7",
+      "i18n": "0.14.2",
+      "jsonwebtoken": "8.5.1",
+      "locale": "0.1.0",
+      "moment": "2.29.3",
+      "mongodb": "3.6.6",
+      "multer": "1.4.4",
+      "puppeteer": "13.5.2",
+      "sanitize-filename": "1.6.3",
+      "winston": "2.4.4"
+    },
+    "devDependencies": {
+      "nodemon": "2.0.15"
+    }
+  }

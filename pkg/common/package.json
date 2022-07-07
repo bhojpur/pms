@@ -1,0 +1,21 @@
+{
+    "name": "@bhojpur/common",
+    "version": "1.0.0",
+    "description": "A set of common modules required by Bhojpur PMS application'",
+    "homepage": "https://www.bhojpur-consulting.com",
+    "author": "Bhojpur Consulting Private Limited, India",
+    "license": "MIT",
+    "private": true,
+    "dependencies": {
+      "bcrypt": "5.0.1",
+      "jsonwebtoken": "8.5.1",
+      "lodash": "4.17.21",
+      "mongoose": "5.13.10",
+      "redis": "3.1.1",
+      "winston": "2.4.4"
+    },
+    "scripts": {
+      "lint": "eslint .",
+      "format": "prettier --write '**/*.{js,jsx,ts,tsx,json,css}'"
+    }
+  }

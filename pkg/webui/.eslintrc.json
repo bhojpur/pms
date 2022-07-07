@@ -1,0 +1,13 @@
+{
+    "extends": ["eslint:recommended", "next", "prettier"],
+    "settings": {
+      "next": {
+        "rootDir": ["pkg/webui"]
+      }
+    },
+    "env": {
+      "jest": true,
+      "es2021": true,
+      "browser": true
+    }
+  }
