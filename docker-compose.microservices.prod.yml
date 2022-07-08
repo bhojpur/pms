@@ -118,7 +118,7 @@ services:
   frontend:
     build:
       context: .
-      dockerfile: pkg/webui/Dockerfile
+      dockerfile: pkg/landlord/Dockerfile
     # logging:
     #   driver: syslog
     #   options:

@@ -37,14 +37,14 @@ const displayHeader = () => {
   clear();
   console.log(
     chalk.white(
-      figlet.textSync('BhojpurPMS', {
+      figlet.textSync('Bhojpur PMS', {
         horizontalLayout: 'full',
       })
     )
   );
   console.log(
     chalk.white(
-      'The Bhojpur PMS application helps landlords manage their real-estate properties efficiently'
+      'The Bhojpur PMS is a property management software application that helps owners/landlords manage their real-estate assets efficiently.'
     )
   );
   console.log('');
@@ -56,7 +56,7 @@ const build = async () => {
       ['build', '--no-cache', '--force-rm', '--quiet'],
       { runMode: 'prod' },
       {},
-      'building containers...'
+      'building Bhojpur PMS containers...'
     );
 
     console.log(chalk.green('build completed'));
@@ -72,7 +72,7 @@ const start = async () => {
       ['up', '-d', '--force-recreate', '--remove-orphans'],
       { runMode: 'prod' },
       {},
-      'starting the application...'
+      'starting the Bhojpur PMS application...'
     );
 
     console.log(
@@ -89,7 +89,7 @@ const stop = async (runConfig = { runMode: 'prod' }) => {
       ['rm', '--stop', '--force'],
       { runMode: runConfig.runMode },
       {},
-      'stopping current running application...'
+      'stopping current running Bhojpur PMS application...'
     );
   } catch (error) {
     console.log(chalk.red(error));
@@ -156,7 +156,7 @@ const askForEnvironmentVariables = () => {
     {
       name: 'dbData',
       type: 'list',
-      message: 'Do you want the database to be populated with?',
+      message: 'Do you want the Bhojpur PMS database to be populated with?',
       choices: [
         { name: 'empty data', value: 'empty_data' },
         { name: 'demonstration data', value: 'demo_data' },

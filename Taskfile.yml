@@ -19,7 +19,7 @@ tasks:
         - cd pkg/emailer && npm i 
         - cd pkg/pdfgenerator && npm i 
         - cd pkg/resetservice && npm i 
-        - cd pkg/webui && npm i 
+        - cd pkg/landlord && npm i 
 
     build-tools:
         desc: Build the Bhojpur PMS software tools

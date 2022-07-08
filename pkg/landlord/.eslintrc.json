@@ -2,7 +2,7 @@
     "extends": ["eslint:recommended", "next", "prettier"],
     "settings": {
       "next": {
-        "rootDir": ["pkg/webui"]
+        "rootDir": ["pkg/landlord"]
       }
     },
     "env": {

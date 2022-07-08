@@ -18,28 +18,30 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-FROM node:16-slim
+FROM node:16-stretch
 
-WORKDIR /usr/app
+WORKDIR /usr/
 
 COPY package.json .
 COPY yarn.lock .
 COPY .eslintrc.json .
 COPY pkg/common pkg/common
-COPY pkg/webui/public pkg/webui/public
-COPY pkg/webui/locales pkg/webui/locales
-COPY pkg/webui/src pkg/webui/src
-COPY pkg/webui/.eslintrc.json pkg/webui
-COPY pkg/webui/i18n.json pkg/webui
-COPY pkg/webui/next.config.js pkg/webui
-COPY pkg/webui/package.json pkg/webui
-COPY pkg/webui/LICENSE pkg/webui
+COPY pkg/landlord/public pkg/landlord/public
+COPY pkg/landlord/locales pkg/landlord/locales
+COPY pkg/landlord/src pkg/landlord/src
+COPY pkg/landlord/.eslintrc.json pkg/landlord
+COPY pkg/landlord/i18n.json pkg/landlord
+COPY pkg/landlord/next.config.js pkg/landlord
+COPY pkg/landlord/package.json pkg/landlord
+COPY pkg/landlord/LICENSE pkg/landlord
 
 ARG BASE_PATH
 ENV BASE_PATH $BASE_PATH
 
 ENV NEXT_TELEMETRY_DISABLED=1
 
-RUN yarn workspace landlord install
+RUN yarn workspace landlord install && \
+    yarn cache clean && \
+    yarn workspace landlord run build
 
-CMD yarn workspace landlord run dev -p $PORT
+ENTRYPOINT yarn workspace landlord start -p $PORT

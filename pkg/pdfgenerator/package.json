@@ -1,5 +1,5 @@
 {
-    "name": "bhojpur-pms-pdfgen",
+    "name": "pdfgenerator",
     "version": "1.0.0",
     "description": "A generator or PDF documents (letters, contracts, invoices) for Bhojpur PMS application",
     "homepage": "https://www.bhojpur-consulting.com",

@@ -1,5 +1,5 @@
 {
-    "name": "bhojpur-pms-email",
+    "name": "emailer",
     "version": "1.0.0",
     "description": "A generator and sender of Emails on behalf of Bhojpur PMS application",
     "homepage": "https://www.bhojpur-consulting.com",

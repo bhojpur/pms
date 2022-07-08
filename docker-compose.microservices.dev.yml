@@ -94,10 +94,10 @@ services:
   frontend:
     build:
       context: .
-      dockerfile: pkg/webui/dev.Dockerfile
+      dockerfile: pkg/landlord/dev.Dockerfile
     volumes:
       - ./pkg/common:/usr/app/pkg/common
-      - ./pkg/webui:/usr/app/pkg/webui
-      - /usr/app/pkg/webui/public
+      - ./pkg/landlord:/usr/app/pkg/landlord
+      - /usr/app/pkg/landlord/public
       - /usr/app/node_modules
-      - /usr/app/pkg/webui/node_modules
+      - /usr/app/pkg/landlord/node_modules

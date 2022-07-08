@@ -24,9 +24,8 @@
     },
     "workspaces": [
       "cmd/tools/*",
-      "e2e",
       "pkg/*",
-      "webui/*"
+      "landlord/*"
     ],
     "scripts": {
       "e2e": "yarn workspace e2e run cypress:run",

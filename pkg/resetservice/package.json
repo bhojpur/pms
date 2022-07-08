@@ -1,5 +1,5 @@
 {
-    "name": "bhojpur-pms-reset",
+    "name": "resetservice",
     "version": "1.0.0",
     "description": "A service which allows to reset the Bhojpur PMS databases",
     "homepage": "https://www.bhojpur-consulting.com",
