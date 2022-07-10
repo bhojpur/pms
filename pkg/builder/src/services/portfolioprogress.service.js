@@ -42,4 +42,4 @@ class PortfolioProgressDataService {
   }
 }
 
-export default new PortfolioProgressDataService;
+export default new PortfolioProgressDataService();

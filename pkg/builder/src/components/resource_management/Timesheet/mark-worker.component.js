@@ -189,7 +189,7 @@ class EditWorker extends Component {
     }
 
     render() {
-        const { currentWorker, flag } = this.state;
+        const { currentWorker } = this.state;
         return (
             <div>
                 <Modal.Header closeButton>

@@ -66,7 +66,7 @@ class NewCategory extends Component {
   }
 
   render() {
-    const { projectId } = this.state;
+    // const { projectId } = this.state;
     return (
       <div>
         <div className="modal-dialog modal-dialog-centered" role="document">

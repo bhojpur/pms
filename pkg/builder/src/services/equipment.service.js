@@ -25,9 +25,10 @@ class EquipmentDataService {
     return http.get(`/equipments/list/${id}`);
   }
 
-  getAll() {
-    return http.get(`/equipments/list/`);
-  }
+  //getAll() {
+  //  return http.get(`/equipments/list/`);
+  //}
+
   get(id) {
     return http.get(`/equipments/${id}`);
   }

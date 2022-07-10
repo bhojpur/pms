@@ -18,7 +18,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from "react-router-dom";
 
 import bulldozerIcon from "././../../assets/066-bulldozer.png";

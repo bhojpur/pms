@@ -19,8 +19,6 @@
 // THE SOFTWARE.
 
 import React, { Component } from "react";
-import { Routes, Route } from "react-router-dom";
-import { Link } from "react-router-dom";
 import UserService from "./../../services/user.service";
 import ProjectDataService from "./../../services/project.service";
 

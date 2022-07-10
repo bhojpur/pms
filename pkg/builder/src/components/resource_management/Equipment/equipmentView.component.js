@@ -124,7 +124,7 @@ class Equipment extends Component {
     }
 
     render() {
-        const { equipments, id, categorys, searchTitle, currentEquipment, projects } = this.state;
+        const { equipments, id, categorys, searchTitle, currentEquipment } = this.state;
 
         return (
             <div>

@@ -109,7 +109,7 @@ class ViewTimesheet extends Component {
   closeModal = () => this.setState({ isOpen: false });
 
   render() {
-    const { id, timesheet, workedHours, crews, currentWorker, code, user } = this.state;
+    const { id, timesheet, workedHours, currentWorker, code, user } = this.state;
     console.log(user)
 
     return (
@@ -237,7 +237,7 @@ class ViewTimesheet extends Component {
               </tbody>
             </table>
 
-            {timesheet.status == "Pending" ?
+            {timesheet.status === "Pending" ?
               <button
                 href="#"
                 className="btn btn-primary mr-3"

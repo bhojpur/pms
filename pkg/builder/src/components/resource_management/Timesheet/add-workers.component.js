@@ -169,7 +169,7 @@ class Workers extends Component {
   }
 
   render() {
-    const { crews, id, workers, searchTitle, code, currentWorker, currentIndex, workedHours, workedHoursID } = this.state;
+    const { crews, id, workers, searchTitle, code, workedHours, workedHoursID } = this.state;
     workedHours && workedHours.map((workedHour) => (
       workedHoursID.includes(workedHour.workerWId) ? null : workedHoursID.push(workedHour.workerWId)));
 

@@ -82,14 +82,12 @@ class CreateTimesheet extends Component {
   }
 
   render() {
-    const { crews, currentIndex, id, workers } = this.state;
+    // const { crews, currentIndex, id, workers } = this.state;
     var today = new Date().toISOString().split('T')[0];
     //console.log(workers)
     return (
       <div>
         {/*------------------------------------ Add Emp Starts------------------------------------------------------------------ */}
-
-
 
         <div className="modal-dialog modal-sm modal-dialog-centered" role="document">
           <div className="modal-content">

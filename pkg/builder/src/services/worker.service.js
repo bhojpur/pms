@@ -25,9 +25,9 @@ class WorkerDataService {
     return http.get(`/workers/list/${id}`);
   }
 
-  getAll() {
-    return http.get(`/workers/list/`);
-  }
+  // getAll() {
+  //   return http.get(`/workers/list/`);
+  // }
 
   findVaildNIC(NIC) {
     return http.get(`/workers/validNIC?NIC=${NIC}`);

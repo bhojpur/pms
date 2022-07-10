@@ -156,7 +156,7 @@ class Timesheet extends Component {
                     <p>Id: {timesheet.id}</p>
                     <h5 >Date: {timesheet.date}</h5>
 
-                    {timesheet.status == "Pending" ?
+                    {timesheet.status === "Pending" ?
                       <p>🔴 Not Approved</p> : <p>🟢 Approved by {timesheet.username}</p>}
                   </div>
                   <div className="col-6 text-right">

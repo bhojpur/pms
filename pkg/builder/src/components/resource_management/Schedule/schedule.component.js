@@ -48,11 +48,11 @@ import {
   EditRecurrenceMenu,
 } from '@devexpress/dx-react-scheduler-material-ui';
 
-const appointments = [
-  { startDate: '2018-11-01T09:45', endDate: '2018-11-01T11:00', title: 'Meeting' },
-  { startDate: '2018-11-01T12:00', endDate: '2018-11-01T13:30', title: 'Go to a gym' },
-  { title: 'Mail New Leads for Follow Up', startDate: '2018-11-01T13:30' },
-];
+//const appointments = [
+//  { startDate: '2018-11-01T09:45', endDate: '2018-11-01T11:00', title: 'Meeting' },
+//  { startDate: '2018-11-01T12:00', endDate: '2018-11-01T13:30', title: 'Go to a gym' },
+//  { title: 'Mail New Leads for Follow Up', startDate: '2018-11-01T13:30' },
+//];
 
 const useStyles = makeStyles(theme => ({
   todayCell: {
@@ -255,7 +255,7 @@ export default class Schedule extends React.PureComponent {
   }
 
   render() {
-    const { currentDate, data, addedAppointment, appointmentChanges, editingAppointment, id, data1 } = this.state;
+    const { currentDate, data, addedAppointment, appointmentChanges, editingAppointment, id } = this.state;
 
     return (
 
