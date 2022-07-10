@@ -8,32 +8,32 @@
     "main": "src/index.js",
     "private": true,
     "scripts": {
-      "test": "jest",
-      "start": "node src/index.js",
-      "dev": "nodemon -w ../common -w scripts -w src --inspect=0.0.0.0:9230 ./src/index.js",
-      "lint": "eslint .",
-      "format": "prettier --write '**/*.{js,jsx,ts,tsx,json,css}'"
+        "test": "jest",
+        "start": "node src/index.js",
+        "dev": "nodemon -w ../common -w scripts -w src --inspect=0.0.0.0:9230 ./src/index.js",
+        "lint": "eslint .",
+        "format": "prettier --write '**/*.{js,jsx,ts,tsx,json,css}'"
     },
     "dependencies": {
-      "@bhojpur/common": "*",
-      "cookie-parser": "1.4.5",
-      "express": "4.17.1",
-      "express-winston": "2.6.0",
-      "i18n": "0.13.3",
-      "json2csv": "5.0.6",
-      "jsonwebtoken": "8.5.1",
-      "method-override": "3.0.0",
-      "moment": "2.29.3",
-      "mongobackup": "0.3.5",
-      "mongoose": "5.13.10",
-      "mongojs": "3.1.0",
-      "nanoid": "3.2.0",
-      "sugar": "2.0.6",
-      "winston": "2.4.4"
+        "@bhojpur/common": "*",
+        "cookie-parser": "1.4.5",
+        "express": "4.17.1",
+        "express-winston": "2.6.0",
+        "i18n": "0.13.3",
+        "json2csv": "5.0.6",
+        "jsonwebtoken": "8.5.1",
+        "method-override": "3.0.0",
+        "moment": "^2.29.4",
+        "mongobackup": "0.3.5",
+        "mongojs": "3.1.0",
+        "mongoose": "5.13.10",
+        "nanoid": "3.2.0",
+        "sugar": "2.0.6",
+        "winston": "2.4.4"
     },
     "devDependencies": {
-      "jest": "27.5.0",
-      "nodemon": "2.0.12",
-      "supertest": "6.1.3"
+        "jest": "27.5.0",
+        "nodemon": "^2.0.19",
+        "supertest": "6.1.3"
     }
-  }
+}

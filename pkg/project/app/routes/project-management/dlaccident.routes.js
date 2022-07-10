@@ -1,0 +1,48 @@
+// Copyright (c) 2018 Bhojpur Consulting Private Limited, India. All rights reserved.
+
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+
+module.exports = app => {
+    const dlaccident = require("../../controllers/project-management/dlaccident.controller");
+  
+    var router = require("express").Router();
+  
+    // Create a new daily log - accident
+    router.post("/", dlaccident.create);
+
+    // Update a daily log - accident with id
+    router.put("/update/:id", dlaccident.update);
+    
+    // Delete a daily log - accident with id
+    router.put("/delete/:id", dlaccident.delete);
+
+    // Retrive single daily log - accident for a project
+    router.get("/single/:id", dlaccident.findOne);
+
+    // Retrieve all daily log - accident for a project
+    router.get("/list/:id", dlaccident.findAllweek);
+
+    // Retrieve all daily log - accident for a project
+    router.get("/list/all/:id", dlaccident.findAll);
+
+    // Retrieve all daily log - accident for a project
+    router.get("/today/:id", dlaccident.findToday);
+    
+    app.use('/api/projects/dlaccident', router);
+};

@@ -8,55 +8,61 @@
     "main": "index.js",
     "private": true,
     "repository": {
-      "type": "git",
-      "url": "git+https://github.com/bhojpur/pms.git"
+        "type": "git",
+        "url": "git+https://github.com/bhojpur/pms.git"
     },
     "keywords": [
-      "property-management",
-      "real-estate",
-      "rents",
-      "tenants",
-      "landlord",
-      "open-source"
+        "property-management",
+        "project-management",
+        "financial-management",
+        "real-estate",
+        "rents",
+        "tenants",
+        "landlord",
+        "open-source"
     ],
     "bugs": {
-      "url": "https://github.com/bhojpur/pms/issues"
+        "url": "https://github.com/bhojpur/pms/issues"
     },
     "workspaces": [
-      "cmd/tools/*",
-      "pkg/*",
-      "landlord/*"
+        "cmd/tools/*",
+        "pkg/*",
+        "landlord/*"
     ],
     "scripts": {
-      "e2e": "yarn workspace e2e run cypress:run",
-      "e2e:open": "yarn workspace e2e run cypress:open",
-      "format": "yarn workspaces run format",
-      "lint": "yarn workspaces run lint"
+        "e2e": "yarn workspace e2e run cypress:run",
+        "e2e:open": "yarn workspace e2e run cypress:open",
+        "format": "yarn workspaces run format",
+        "lint": "yarn workspaces run lint"
     },
     "lint-staged": {
-      "*.{js,ts,tsx, jsx}": [
-        "eslint --quiet --fix"
-      ],
-      "*.{json,md,html,js,jsx,ts,tsx}": [
-        "prettier --write"
-      ]
+        "*.{js,ts,tsx, jsx}": [
+            "eslint --quiet --fix"
+        ],
+        "*.{json,md,html,js,jsx,ts,tsx}": [
+            "prettier --write"
+        ]
     },
     "devDependencies": {
-      "eslint": "8.18.0",
-      "eslint-config-next": "12.2.0",
-      "eslint-config-prettier": "8.5.0",
-      "eslint-plugin-cypress": "2.12.1",
-      "eslint-plugin-import": "2.26.0",
-      "eslint-plugin-jest": "26.5.3",
-      "eslint-plugin-node": "11.1.0",
-      "eslint-plugin-promise": "6.0.0",
-      "eslint-plugin-standard": "5.0.0",
-      "prettier": "2.6.2"
+        "@types/underscore": "^1.11.4",
+        "eslint": "8.19.0",
+        "eslint-config-next": "12.2.2",
+        "eslint-config-prettier": "8.5.0",
+        "eslint-plugin-cypress": "2.12.1",
+        "eslint-plugin-import": "2.26.0",
+        "eslint-plugin-jest": "26.5.3",
+        "eslint-plugin-node": "11.1.0",
+        "eslint-plugin-promise": "6.0.0",
+        "eslint-plugin-standard": "5.0.0",
+        "prettier": "2.7.1"
     },
     "dependencies": {
-      "axios": "0.27.2",
-      "husky": "7.0.4",
-      "lint-staged": "12.3.4"
+        "axios": "0.27.2",
+        "crypto": "^1.0.1",
+        "crypto-js": "^4.1.1",
+        "husky": "8.0.1",
+        "install-peers": "^1.0.4",
+        "lint-staged": "13.0.3"
     },
-    "packageManager": "yarn@1.22.17"
-  }
+    "packageManager": "yarn@1.22.19"
+}
